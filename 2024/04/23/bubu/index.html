@@ -20,15 +20,17 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="article">
-<meta property="og:title" content="bubu">
+  <meta name="description" content="测试有效的在Hexo中插入图片的方法：1）采用插件的（以hexo-image-link插件为例）参考如果安装了 hexo-asset-img 插件，需要将其卸载；使用 hexo-image-link。采用如下代码： 1![miss Bing](bubu&#x2F;bubu.jpg)   2）Hexo的asset方法通过常规的 markdown 语法和相对路径来引用图片和其它资源可能会导致它们在存档页或者主页">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Insert image in Hexo">
 <meta property="og:url" content="http://example.com/2024/04/23/bubu/index.html">
 <meta property="og:site_name" content="Tylin">
+<meta property="og:description" content="测试有效的在Hexo中插入图片的方法：1）采用插件的（以hexo-image-link插件为例）参考如果安装了 hexo-asset-img 插件，需要将其卸载；使用 hexo-image-link。采用如下代码： 1![miss Bing](bubu&#x2F;bubu.jpg)   2）Hexo的asset方法通过常规的 markdown 语法和相对路径来引用图片和其它资源可能会导致它们在存档页或者主页">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/2024/04/23/bubu/bubu.jpg">
 <meta property="og:image" content="http://example.com/2024/04/23/bubu/bubu.jpg">
 <meta property="article:published_time" content="2024-04-22T17:55:35.000Z">
-<meta property="article:modified_time" content="2024-04-22T18:47:18.807Z">
+<meta property="article:modified_time" content="2024-04-22T19:35:11.002Z">
 <meta property="article:author" content="Ty Lin">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2024/04/23/bubu/bubu.jpg">
@@ -46,7 +48,7 @@
   };
 </script>
 
-  <title>bubu | Tylin</title>
+  <title>Insert image in Hexo | Tylin</title>
   
 
 
@@ -164,7 +166,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          bubu
+          Insert image in Hexo
         </h1>
 
         <div class="post-meta">
@@ -175,7 +177,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2024-04-23 01:55:35 / Modified: 02:47:18" itemprop="dateCreated datePublished" datetime="2024-04-23T01:55:35+08:00">2024-04-23</time>
+              <time title="Created: 2024-04-23 01:55:35 / Modified: 03:35:11" itemprop="dateCreated datePublished" datetime="2024-04-23T01:55:35+08:00">2024-04-23</time>
             </span>
 
           
@@ -189,8 +191,21 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <img src="/2024/04/23/bubu/bubu.jpg" class="" title="miss Bing">
+        <p>测试有效的在Hexo中插入图片的方法：<br>1）采用插件的（以hexo-image-link插件为例）<br><a target="_blank" rel="noopener" href="https://www.arcsin2.cloud/2023/02/23/Hexo-%E5%8D%9A%E5%AE%A2%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%87%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">参考</a><br>如果安装了 hexo-asset-img 插件，需要将其卸载；使用 hexo-image-link。<br>采用如下代码：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">miss Bing</span>](<span class="link">bubu/bubu.jpg</span>)</span><br></pre></td></tr></table></figure>
 <img src="/2024/04/23/bubu/bubu.jpg" class="" title="miss Bing">
+
+<p>2）Hexo的asset方法<br>通过常规的 markdown 语法和相对路径来引用图片和其它资源可能会导致它们在存档页或者主页上显示不正确。在Hexo 2时代，社区创建了很多插件来解决这个问题。但是，随着Hexo 3 的发布，许多新的标签插件被加入到了核心代码中。这使得你可以更简单地在文章中引用你的资源。</p>
+<p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/tag-plugins#%E5%BC%95%E7%94%A8%E8%B5%84%E6%BA%90">参考</a></p>
+<p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/asset-folders#%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%BC%95%E7%94%A8%E7%9A%84%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6">参考</a></p>
+<p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/tag-plugins#%E5%B5%8C%E5%85%A5%E5%9B%BE%E7%89%87">嵌入图片</a></p>
+<p>采用如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img bubu.jpg  miss Bing %&#125;</span><br><span class="line">&lt;img src=&quot;bubu.jpg&quot; title=&quot;miss Bing&quot; alt=&quot;wuwu&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<img src="/2024/04/23/bubu/bubu.jpg" class="" title="miss Bing">
+
+
+
     </div>
 
     
